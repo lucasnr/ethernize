@@ -1,0 +1,39 @@
+.input {
+	background: transparent;
+	border: 0.0625rem solid #bcbcbc;
+	border-radius: 0.125rem;
+	font-size: 0.75rem;
+	padding: 0.875rem 1rem;
+	width: 100%;
+}
+
+.input::placeholder {
+	color: #aaa;
+}
+
+.btn {
+	background-color: #fff;
+	border: 0.125rem solid #0a7bbd;
+	border-radius: 0.125rem;
+	color: #0a7bbd;
+	font-size: 0.875rem;
+	font-weight: 600;
+	padding: 0.75rem 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:focus,
+.btn:hover,
+.btn.btn--variant {
+	background-color: #0a7bbd;
+	color: #fff;
+}
+
+.btn.btn--variant:focus,
+.btn.btn--variant:hover {
+	background-color: #fff;
+	border-color: #0a7bbd;
+	color: #0a7bbd;
+}
