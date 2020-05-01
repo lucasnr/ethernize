@@ -12,8 +12,8 @@
 		<link rel="stylesheet" href="./assets/css/index.css" />
 	</head>
 	<body>
-		<main>
-			<form class="form">
+		<main class="container">
+			<form class="form" id="login-form">
 				<img
 					id="logo"
 					src="./assets/img/logo.png"
@@ -35,4 +35,13 @@
 			</form>
 		</main>
 	</body>
+
+	<!-- fake navigation -->
+	<script>
+		const form = document.querySelector('#login-form');
+		form.onsubmit = function (event) {
+			event.preventDefault();
+			window.location.replace('./dashboard.html');
+		};
+	</script>
 </html>

@@ -34,7 +34,7 @@ button {
 	cursor: pointer;
 }
 
-main {
+.container {
 	margin: 0px auto;
 	max-width: 1200px;
 	padding: 0px 0.75rem;
@@ -43,4 +43,8 @@ main {
 
 .color-1 {
 	color: #0a7bbd;
+}
+
+.color-success {
+	color: #10ad44;
 }

@@ -1,5 +1,6 @@
 body {
 	align-items: center;
+	background-color: #fbfbfb;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -8,14 +9,17 @@ body {
 
 .form {
 	align-items: center;
-	background-color: #fff;
+	background-color: #fbfbfb;
 	border-radius: 0.5rem;
 	display: flex;
 	flex-direction: column;
 	max-width: 24rem;
 	margin: 0px auto;
+	overflow: hidden;
 	padding: 4rem 2rem;
+	position: relative;
 	width: 100%;
+	z-index: 10;
 }
 
 .form #logo {
@@ -46,24 +50,56 @@ body {
 	min-width: 12.5rem;
 }
 
+.form .btn:not(.btn--variant):not(:hover):not(:focus) {
+	background-color: transparent;
+}
+
+.form .btn.btn--variant:focus,
+.form .btn.btn--variant:hover {
+	background-color: transparent;
+}
+
 .form .btn[type='submit'] {
 	margin: 2rem 0px;
 }
 
 @media (max-width: 576px) {
-	main {
+	.container {
 		padding: 0;
 	}
 }
 
 @media (min-width: 576px) {
+	body {
+		background-color: #f2f2f2;
+		padding: 2rem 0px;
+	}
+
 	.form {
 		box-shadow: 3rem 1.75rem 5rem #ddd;
 		padding: 5.75rem 3rem;
 	}
 
-	body {
-		background-color: #f2f2f2;
-		padding: 2rem 0px;
+	.form::before,
+	.form::after {
+		content: ' ';
+		position: absolute;
+		z-index: -1;
+	}
+
+	.form::before {
+		border-color: #fcfcfc transparent transparent transparent;
+		border-style: solid;
+		border-width: 4rem 8rem 0 0;
+		left: 0;
+		top: 0;
+	}
+
+	.form::after {
+		border-style: solid;
+		border-color: transparent transparent #f9f9f9 transparent;
+		border-width: 0 0 8rem 17rem;
+		bottom: 0;
+		right: 0;
 	}
 }
