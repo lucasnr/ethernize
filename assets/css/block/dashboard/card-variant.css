@@ -45,6 +45,6 @@
 @media (min-width: 576px) {
 	.card.card--variant {
 		align-self: flex-start;
-		width: calc(30% - 0.75rem);
+		width: calc(50% - 0.75rem);
 	}
 }
