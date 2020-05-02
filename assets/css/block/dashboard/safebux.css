@@ -1,0 +1,18 @@
+#safebux {
+	/* margin-top: auto; */
+	padding: 1.25rem;
+}
+
+#safebux > a > img {
+	width: 10rem;
+}
+
+#safebux > a > *:last-child {
+	font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+	#safebux {
+		margin-left: 1rem;
+	}
+}

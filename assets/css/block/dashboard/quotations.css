@@ -1,0 +1,40 @@
+#quotations {
+	padding-bottom: 0.25rem;
+}
+
+#quotations #quotations-icon {
+	color: rgba(0, 0, 0, 0.375);
+	font-size: 2rem;
+	margin-top: -1rem;
+}
+
+#quotations {
+	padding-bottom: 1rem;
+}
+
+#quotations .card__subtitle {
+	margin-bottom: 0px;
+}
+
+#quotations .quotation {
+	border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.15);
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+}
+
+#quotations .quotation .quotation__percent {
+	display: flex;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+#quotations .quotation .quotation__value {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+@media (min-width: 576px) {
+	#quotations {
+		width: calc(70% - 0.75rem);
+	}
+}

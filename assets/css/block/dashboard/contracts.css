@@ -1,0 +1,39 @@
+#contracts table {
+	margin-top: 1.5rem;
+}
+
+#contracts table thead {
+	background-color: #f9f9f9;
+	color: rgba(0, 0, 0, 0.85);
+}
+
+#contracts table th {
+	font-weight: 600;
+}
+
+#contracts table th,
+#contracts table td {
+	font-size: 0.625rem;
+	padding: 0.75rem;
+	text-align: center;
+}
+
+#contracts table tbody tr:nth-child(odd) {
+	background-color: #ededed;
+}
+
+#contracts table tbody tr:nth-child(even) {
+	background-color: #e0e0e0;
+}
+
+@media (min-width: 768px) {
+	#contracts {
+		width: calc(58% - 0.75rem);
+	}
+}
+
+@media (min-width: 992px) {
+	#contracts {
+		width: calc(62% - 0.75rem);
+	}
+}

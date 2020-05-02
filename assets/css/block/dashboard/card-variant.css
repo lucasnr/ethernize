@@ -1,0 +1,50 @@
+.card.card--variant {
+	align-items: flex-start;
+	background-color: #2588c9;
+	background-image: linear-gradient(
+		137deg,
+		rgba(255, 255, 255, 0.1) 30%,
+		rgba(0, 0, 0, 0.025) 52%,
+		transparent 0%
+	);
+	color: #fff;
+	display: flex;
+	padding: 1.5rem;
+	position: relative;
+	z-index: 5;
+}
+
+.card.card--variant svg {
+	margin-right: 1rem;
+	width: 30%;
+}
+
+.card.card--variant svg path {
+	fill: #fff;
+}
+
+.card.card--variant .card__title {
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+
+.card.card--variant .card__subtitle {
+	font-size: 0.84375rem;
+	font-weight: 300;
+}
+
+.card.card--variant .btn {
+	font-weight: 400;
+}
+
+.card.card--variant .btn:not(:focus):not(:hover) {
+	border-color: #fff;
+	background-color: transparent;
+}
+
+@media (min-width: 576px) {
+	.card.card--variant {
+		align-self: flex-start;
+		width: calc(30% - 0.75rem);
+	}
+}
