@@ -36,9 +36,33 @@ main {
 	color: #0a7bbd;
 	font-size: 1.75rem;
 	font-weight: 500;
-	margin-bottom: 2rem;
+	margin-bottom: 3.5rem;
 	margin-left: 0.5rem;
 	margin-top: 0;
+}
+
+.subtitle {
+	align-items: center;
+	color: #088bd6;
+	display: flex;
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+}
+
+.subtitle::after {
+	background-color: #088bd6;
+	content: '';
+	flex-grow: 1;
+	height: 0.0625rem;
+	margin-left: 1rem;
+}
+
+.value {
+	background-color: #f8f8f8;
+	min-height: 2rem;
+	min-width: 6rem;
 }
 
 .btn {
@@ -105,5 +129,11 @@ main {
 @media (min-width: 992px) {
 	.d-lg-flex {
 		display: flex;
+	}
+}
+
+@media (min-width: 1260px) {
+	.card {
+		padding: 2.5rem 2.75rem;
 	}
 }

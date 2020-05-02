@@ -1,0 +1,34 @@
+#transactions table {
+	width: 90%;
+}
+
+#transactions table th,
+#transactions table td {
+	padding: 1rem;
+	padding-left: 0px;
+	padding-right: 1.5rem;
+}
+
+#transactions table th:last-child,
+#transactions table td:last-child {
+	width: 100%;
+}
+
+#transactions table th {
+	color: rgba(0, 0, 0, 0.425);
+	font-size: 0.5rem;
+	font-weight: 700;
+	padding-bottom: 0.5rem;
+	padding-top: 0px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+#transactions table td {
+	border-top: 0.0625rem solid rgba(0, 0, 0, 0.125);
+	font-weight: 600;
+}
+
+#transactions table td:first-child {
+	font-size: 0.75rem;
+}

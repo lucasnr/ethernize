@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ethernize - Resumo</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css"
+		/>
+
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/block/header.css" />
+		<link rel="stylesheet" href="./assets/css/block/form.css" />
+		<link rel="stylesheet" href="./assets/css/block/transactions.css" />
+		<link rel="stylesheet" href="./assets/css/commons.css" />
+
+		<link rel="stylesheet" href="./assets/css/overview.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div>
+					<button class="header__button">
+						<i class="mdi mdi-menu"></i>
+					</button>
+					<a href="./dashboard.html" class="header__brand">
+						<img src="./assets/img/logo.png" alt="Logomarca da Ethernize" />
+						ethernize
+					</a>
+				</div>
+
+				<div class="header__user">
+					<div>
+						<h6 class="header__user__name color-1">Alessandra Lima</h6>
+
+						<div class="d-flex align-center">
+							<span class="header__user__summary-label">Resumo da conta</span>
+							<span class="header__user__summary-value color-success d-flex">
+								<i class="mdi mdi-chevron-up-box"></i>
+								0.16%
+							</span>
+						</div>
+					</div>
+					<img
+						class="header__user__avatar"
+						src="./assets/img/user.jpg"
+						alt="Imagem do usuário"
+					/>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<h1 class="title">Resumo da conta</h1>
+
+			<div class="d-lg-flex justify-space-between">
+				<section class="card">
+					<div class="group">
+						<h2 class="subtitle">Carteira</h2>
+
+						<div>
+							<h3 class="card__subtitle">Saldo disponível</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Saldo rendimentos</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Saldo comissões</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Saldo processando</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">BTC/BRL</h3>
+							<h6 class="value"></h6>
+						</div>
+					</div>
+
+					<div class="group">
+						<h2 class="subtitle">Contratos</h2>
+
+						<div>
+							<h3 class="card__subtitle">Número de contratos</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Investimento</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Limite de Bônus</h3>
+							<h6 class="value"></h6>
+						</div>
+					</div>
+
+					<div class="group">
+						<h2 class="subtitle">Bônus</h2>
+
+						<div>
+							<h3 class="card__subtitle">Indicação direta</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Bônus de equipe</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Sharing bônus</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Total de pontos:</h3>
+							<h6 class="value"></h6>
+						</div>
+					</div>
+
+					<div class="group">
+						<h2 class="subtitle">Rede</h2>
+
+						<div>
+							<h3 class="card__subtitle">Total</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Diretos</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Indiretos</h3>
+							<h6 class="value"></h6>
+						</div>
+						<div>
+							<h3 class="card__subtitle">Título</h3>
+							<h6 class="value"></h6>
+						</div>
+					</div>
+				</section>
+
+				<section id="transactions" class="card">
+					<h2 class="card__title">Últimas movimentações</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Dia</th>
+								<th>Valor creditado/debitado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>23</td>
+								<td class="color-success">+ R$ 1.3020,80</td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td class="color-danger">- R$ 500,54</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td class="color-danger">- R$ 56,90</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td class="color-success">+ R$ 3.883,90</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td class="color-danger">- R$ 4.000,20</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td class="color-danger">- R$ 56,90</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td class="color-success">+ R$ 3.883,90</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td class="color-danger">- R$ 4.000,20</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

@@ -63,6 +63,7 @@
 
 	.cards:last-child {
 		flex-direction: column;
+		justify-content: space-between;
 		width: calc(20% - 0.75rem);
 	}
 
