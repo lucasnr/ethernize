@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ethernize - Dashboard</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css"
+		/>
+
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/block/header.css" />
+		<link rel="stylesheet" href="./assets/css/block/form.css" />
+		<link rel="stylesheet" href="./assets/css/commons.css" />
+
+		<link rel="stylesheet" href="./assets/css/dashboard.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div>
+					<button class="header__button">
+						<i class="mdi mdi-menu"></i>
+					</button>
+					<a href="./dashboard.html" class="header__brand">
+						<img src="./assets/img/logo.png" alt="Logomarca da Ethernize" />
+						ethernize
+					</a>
+				</div>
+
+				<div class="header__user">
+					<div>
+						<h6 class="header__user__name color-1">Alessandra Lima</h6>
+
+						<div class="d-flex align-center">
+							<span class="header__user__summary-label">Resumo da conta</span>
+							<span class="header__user__summary-value color-success d-flex">
+								<i class="mdi mdi-chevron-up-box"></i>
+								0.16%
+							</span>
+						</div>
+					</div>
+					<img
+						class="header__user__avatar"
+						src="./assets/img/user.jpg"
+						alt="Imagem do usuário"
+					/>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<h1 class="title">Dashboard</h1>
+
+			<div class="d-flex">
+				<div class="cards">
+					<section id="income" class="card">
+						<h2 class="card__title">Rendimentos do mês</h2>
+						<h3 class="money">
+							R$ 1.3020,80
+							<span class="color-success">
+								<i class="mdi mdi-chevron-up-box"></i>
+								0.16%
+							</span>
+						</h3>
+						<h4 class="card__subtitle">Saldo disponível: R$ 0,00</h4>
+						<h4 class="card__subtitle">
+							Saque: R$ 0,00 <span class="badge">Processando</span>
+						</h4>
+						<h4 class="card__subtitle">BTC/BRL: R$ 0,00</h4>
+
+						<a href="#" class="btn">
+							Ver tudo <i class="mdi mdi-arrow-right"></i>
+						</a>
+					</section>
+
+					<section id="buy" class="card">
+						<h2 class="card__title">Compre contratos</h2>
+
+						<div class="d-flex">
+							<form>
+								<h3 class="card__subtitle">Saque mensal</h3>
+								<select class="input">
+									<option value="Período" disabled selected>Período</option>
+								</select>
+
+								<div class="d-flex">
+									<input type="text" class="input" placeholder="Cotas" />
+									<button class="btn" type="submit">
+										Comprar <i class="mdi mdi-arrow-right"></i>
+									</button>
+								</div>
+							</form>
+
+							<form>
+								<h3 class="card__subtitle">Saque trimestral</h3>
+								<select class="input">
+									<option value="Período" disabled selected>Período</option>
+								</select>
+
+								<div class="d-flex">
+									<input type="text" class="input" placeholder="Cotas" />
+									<button class="btn" type="submit">
+										Comprar <i class="mdi mdi-arrow-right"></i>
+									</button>
+								</div>
+							</form>
+
+							<form>
+								<h3 class="card__subtitle">Saque único</h3>
+								<select class="input">
+									<option value="Período" disabled selected>Período</option>
+								</select>
+
+								<div class="d-flex">
+									<input type="text" class="input" placeholder="Cotas" />
+									<button class="btn" type="submit">
+										Comprar <i class="mdi mdi-arrow-right"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</section>
+
+					<section id="transactions" class="card">
+						<h2 class="card__title">Últimas movimentações</h2>
+						<h3 class="card__subtitle">
+							Lorem ipsum dolor sit amet gravita sans conecstur lorem lorem
+						</h3>
+
+						<table>
+							<thead>
+								<tr>
+									<th>Dia</th>
+									<th>Valor creditado/debitado</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>23</td>
+									<td class="color-success">+ R$ 1.3020,80</td>
+								</tr>
+								<tr>
+									<td>19</td>
+									<td class="color-danger">- R$ 500,54</td>
+								</tr>
+								<tr>
+									<td>17</td>
+									<td class="color-danger">- R$ 56,90</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td class="color-success">+ R$ 3.883,90</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td class="color-danger">- R$ 4.000,20</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="#" class="btn">
+							Ver tudo <i class="mdi mdi-arrow-right"></i>
+						</a>
+					</section>
+
+					<section id="contracts" class="card">
+						<div class="d-flex align-center justify-space-between">
+							<div>
+								<h2 class="card__title">Seus contratos</h2>
+								<h3 class="card__subtitle">
+									Lorem ipsum dolor sit<br />amet gravita sans conecstur lorem
+									lorem
+								</h3>
+							</div>
+
+							<a href="#" class="btn">
+								Ver tudo <i class="mdi mdi-arrow-right"></i>
+							</a>
+						</div>
+
+						<table>
+							<thead>
+								<tr>
+									<th>Data</th>
+									<th>Qtde</th>
+									<th>Contrato</th>
+									<th>Venc.</th>
+									<th>Saldo</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>26/07/2019</td>
+									<td>200</td>
+									<td>Rendimento Mensal</td>
+									<td>26/07/2020</td>
+									<td>R$0,00</td>
+									<td><i class="mdi mdi-check-bold color-success"></i></td>
+								</tr>
+								<tr>
+									<td>26/07/2019</td>
+									<td>200</td>
+									<td>Rendimento Mensal</td>
+									<td>26/07/2020</td>
+									<td>R$0,00</td>
+									<td><i class="mdi mdi-check-bold color-success"></i></td>
+								</tr>
+								<tr>
+									<td>26/07/2019</td>
+									<td>200</td>
+									<td>Rendimento Mensal</td>
+									<td>26/07/2020</td>
+									<td>R$0,00</td>
+									<td><i class="mdi mdi-check-bold color-success"></i></td>
+								</tr>
+								<tr>
+									<td>26/07/2019</td>
+									<td>200</td>
+									<td>Rendimento Mensal</td>
+									<td>26/07/2020</td>
+									<td>R$0,00</td>
+									<td><i class="mdi mdi-check-bold color-success"></i></td>
+								</tr>
+								<tr>
+									<td>26/07/2019</td>
+									<td>200</td>
+									<td>Rendimento Mensal</td>
+									<td>26/07/2020</td>
+									<td>R$0,00</td>
+									<td><i class="mdi mdi-check-bold color-success"></i></td>
+								</tr>
+								<tr>
+									<td>26/07/2019</td>
+									<td>200</td>
+									<td>Rendimento Mensal</td>
+									<td>26/07/2020</td>
+									<td>R$0,00</td>
+									<td><i class="mdi mdi-check-bold color-success"></i></td>
+								</tr>
+								<tr>
+									<td>26/07/2019</td>
+									<td>200</td>
+									<td>Rendimento Mensal</td>
+									<td>26/07/2020</td>
+									<td>R$0,00</td>
+									<td><i class="mdi mdi-check-bold color-success"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</div>
+
+				<div class="cards">
+					<section class="card card--variant">
+						<svg viewBox="0 0 469.333 469.333">
+							<path
+								d="M277.333,89.144V52.607C277.333-17.536,0-17.536,0,52.607v213.706c0,27.574,43.163,44.763,95.089,50.874 C76.096,325.705,64,337.211,64,351.795v64.112c0,35.072,69.76,53.426,138.667,53.426s138.667-18.355,138.667-53.426v-32.233 c65.254-1.794,128-19.988,128-53.249V138.09C469.333,93.808,358.837,77.515,277.333,89.144z M138.667,21.333 c75.917,0,117.333,21.135,117.333,32c0,10.865-41.417,32-117.333,32s-117.333-21.135-117.333-32 C21.333,42.469,62.75,21.333,138.667,21.333z M21.333,83.016c25.883,15.578,71.73,23.651,117.333,23.651 S230.117,98.594,256,83.016v10.6c-37.069,8.221-64,23.234-64,45.051v6.311c-16.717,2.682-34.762,4.355-53.333,4.355 c-75.917,0-117.333-21.135-117.333-32V83.016z M213.333,296.349c2.03,1.221,4.142,2.408,6.409,3.536 c-2.135-0.089-4.266-0.176-6.409-0.232V296.349z M21.333,147.016c25.883,15.578,71.73,23.651,117.333,23.651 c18.464,0,36.411-1.658,53.333-4.186v53.164c-16.717,2.682-34.762,4.355-53.333,4.355c-75.917,0-117.333-21.135-117.333-32 V147.016z M21.333,266.667v-44.984c25.883,15.578,71.73,23.651,117.333,23.651c18.464,0,36.411-1.658,53.333-4.186v53.164 c-16.717,2.682-34.762,4.355-53.333,4.355C62.75,298.667,21.333,277.531,21.333,266.667z M320,416c0,10.865-41.417,32-117.333,32 S85.333,426.865,85.333,416v-34.318c25.883,15.578,71.73,23.651,117.333,23.651c43.652,0,87.587-7.378,113.971-21.669 c1.108,0.042,2.249,0.047,3.362,0.081V416z M202.667,384c-75.917,0-117.333-21.135-117.333-32c0-10.865,41.417-32,117.333-32 S320,341.135,320,352C320,362.865,278.583,384,202.667,384z M448,330.667c0,10.324-37.796,29.708-106.667,31.63V352 c0-13.327-10.085-24.099-26.353-32.353c5.216,0.211,10.448,0.353,15.686,0.353c45.603,0,91.451-8.073,117.333-23.651V330.667z M448,266.667c0,10.865-41.417,32-117.333,32s-117.333-21.135-117.333-32v-34.318C239.216,247.927,285.064,256,330.667,256 c45.603,0,91.451-8.073,117.333-23.651V266.667z M448,202.667c0,10.865-41.417,32-117.333,32s-117.333-21.135-117.333-32v-34.318 C239.216,183.927,285.064,192,330.667,192c45.603,0,91.451-8.073,117.333-23.651V202.667z M330.667,170.667 c-75.917,0-117.333-21.135-117.333-32s41.417-32,117.333-32S448,127.802,448,138.667S406.583,170.667,330.667,170.667z"
+							/>
+						</svg>
+						<div>
+							<h2 class="card__title">Saques</h2>
+							<h3 class="card__subtitle">
+								Lorem ipsum dolor sit amet gravita sans
+							</h3>
+							<button class="btn btn--variant">
+								Sacar <i class="mdi mdi-arrow-right"></i>
+							</button>
+						</div>
+					</section>
+
+					<section id="quotations" class="card">
+						<h2 class="card__title">Cotações</h2>
+
+						<div class="quotation">
+							<div class="d-flex align-center justify-space-between">
+								<h3 class="card__subtitle">Bitcoin</h3>
+								<span class="quotation__percent color-success">
+									<i class="mdi mdi-chevron-up-box"></i>
+									0.12%
+								</span>
+							</div>
+							<h4 class="quotation__value">$ 5.224.38</h4>
+						</div>
+
+						<div class="quotation">
+							<div class="d-flex align-center justify-space-between">
+								<h3 class="card__subtitle">Etherum</h3>
+								<span class="quotation__percent color-danger">
+									<i class="mdi mdi-chevron-up-box"></i>
+									1.24%
+								</span>
+							</div>
+							<h4 class="quotation__value">$ 177.69</h4>
+						</div>
+
+						<div class="quotation">
+							<div class="d-flex align-center justify-space-between">
+								<h3 class="card__subtitle">EURUSD</h3>
+								<span class="quotation__percent color-success">
+									<i class="mdi mdi-chevron-up-box"></i>
+									1.12%
+								</span>
+							</div>
+							<h4 class="quotation__value">$ 5.56</h4>
+						</div>
+
+						<div class="quotation">
+							<div class="d-flex align-center justify-space-between">
+								<h3 class="card__subtitle">ITSA4</h3>
+								<span class="quotation__percent color-danger">
+									<i class="mdi mdi-chevron-up-box"></i>
+									0.55%
+								</span>
+							</div>
+							<h4 class="quotation__value">$ 0.337</h4>
+						</div>
+
+						<i id="quotations-icon" class="mdi mdi-menu-down"></i>
+					</section>
+
+					<section id="talk-to-us" class="card">
+						<a href="#" class="d-flex justify-space-between align-center">
+							<svg class="color-1" viewBox="0 0 512.000000 512.000000">
+								<g
+									fill="currentColor"
+									transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+								>
+									<path
+										d="M2062 4629 c-231 -28 -487 -130 -677 -271 -90 -66 -236 -213 -302 -302 -156 -212 -250 -460 -275 -726 -14 -155 -8 -193 41 -241 60 -60 149 -65 212 -12 41 35 59 79 59 145 1 269 127 565 325 763 179 179 400 289 650 325 39 5 248 10 465 10 217 0 427 -5 465 -10 250 -36 469 -145 645 -320 175 -176 284 -395 320 -645 5 -38 10 -195 10 -347 l0 -278 -108 0 c-65 0 -131 -6 -167 -15 -172 -45 -305 -179 -350 -352 -22 -86 -22 -1102 0 -1188 47 -178 197 -321 374 -355 70 -13 432 -13 502 0 184 35 345 196 379 379 6 31 10 272 10 580 0 571 -1 585 -56 693 -35 70 -135 168 -206 202 l-56 27 -5 347 c-4 298 -8 361 -25 442 -108 512 -469 921 -957 1085 -193 66 -216 68 -730 71 -258 1 -503 -2 -543 -7z m2184 -2255 c15 -11 37 -33 48 -48 21 -27 21 -38 21 -566 0 -528 0 -539 -21 -566 -51 -68 -53 -69 -294 -69 -241 0 -243 1 -294 69 -20 27 -21 40 -24 539 -2 282 0 526 3 544 3 18 18 47 32 64 47 55 67 59 295 56 191 -2 209 -4 234 -23z"
+									/>
+									<path
+										d="M841 2704 c-169 -45 -301 -180 -346 -351 -22 -86 -22 -1102 0 -1188 47 -178 197 -321 374 -355 30 -5 104 -10 165 -10 l112 0 27 -56 c59 -120 197 -226 330 -254 35 -7 226 -10 584 -8 519 3 532 3 559 24 53 39 69 71 69 134 0 63 -16 95 -69 134 -27 20 -42 21 -565 26 -492 5 -539 6 -564 23 -15 9 -27 19 -27 21 0 1 22 17 49 35 62 39 135 120 167 183 53 104 54 121 54 689 0 316 -4 548 -10 580 -34 177 -177 327 -355 374 -81 21 -475 20 -554 -1z m525 -330 c15 -11 37 -33 48 -48 21 -27 21 -38 21 -566 0 -528 0 -539 -21 -566 -51 -68 -53 -69 -294 -69 -241 0 -243 1 -294 69 -20 27 -21 40 -24 539 -2 282 0 526 3 544 3 18 18 47 32 64 47 55 67 59 295 56 191 -2 209 -4 234 -23z"
+									/>
+								</g>
+							</svg>
+
+							<h2 class="card__title">Fale conosco</h2>
+							<i class="mdi mdi-arrow-right color-1"></i>
+						</a>
+					</section>
+
+					<section id="safebux" class="card bg-1 color-2">
+						<a href="#" class="d-flex align-center justify-space-between">
+							<img src="./assets/img/safebux.jpg" alt="Logomarca da Safebux" />
+							<i class="mdi mdi-arrow-right"></i>
+						</a>
+					</section>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

@@ -11,6 +11,7 @@
 }
 
 body {
+	background-color: #f2f2f2;
 	overflow-y: scroll;
 }
 
@@ -34,17 +35,15 @@ button {
 	cursor: pointer;
 }
 
-.container {
-	margin: 0px auto;
-	max-width: 1200px;
-	padding: 0px 0.75rem;
+table {
+	border-collapse: collapse;
 	width: 100%;
+}
+
+main {
+	padding: 2rem 0px;
 }
 
 .color-1 {
 	color: #0a7bbd;
-}
-
-.color-success {
-	color: #10ad44;
 }

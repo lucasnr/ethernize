@@ -1,10 +1,13 @@
 body {
 	align-items: center;
-	background-color: #fbfbfb;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
+}
+
+main {
+	width: 100%;
 }
 
 .form {
@@ -47,6 +50,7 @@ body {
 }
 
 .form .btn {
+	border-width: 0.125rem;
 	min-width: 12.5rem;
 }
 
@@ -64,17 +68,12 @@ body {
 }
 
 @media (max-width: 576px) {
-	.container {
-		padding: 0;
+	body {
+		background-color: #fbfbfb;
 	}
 }
 
 @media (min-width: 576px) {
-	body {
-		background-color: #f2f2f2;
-		padding: 2rem 0px;
-	}
-
 	.form {
 		box-shadow: 3rem 1.75rem 5rem #ddd;
 		padding: 5.75rem 3rem;
