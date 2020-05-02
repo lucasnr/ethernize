@@ -1,5 +1,4 @@
 #safebux {
-	/* margin-top: auto; */
 	padding: 1.25rem;
 }
 
@@ -14,5 +13,12 @@
 @media (min-width: 576px) {
 	#safebux {
 		margin-left: 1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	#safebux {
+		margin-left: 0px;
+		margin-top: auto;
 	}
 }
