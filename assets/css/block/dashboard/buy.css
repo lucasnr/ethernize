@@ -12,7 +12,6 @@
 
 #buy .btn {
 	font-size: 0.5rem;
-	margin-left: 0.375rem;
 }
 
 #buy .btn i {
@@ -22,6 +21,10 @@
 #buy form .input {
 	font-size: 0.625rem;
 	padding: 0.5rem;
+}
+
+#buy form .input:not(select) {
+	max-width: calc(100% - 5.375rem);
 }
 
 #buy form select.input {
