@@ -1,0 +1,13 @@
+@media (min-width: 576px) {
+	#total {
+		flex-grow: 0;
+		min-width: 16rem;
+	}
+}
+
+@media (min-width: 768px) {
+	#details table th,
+	#details table td {
+		font-size: 0.75rem;
+	}
+}

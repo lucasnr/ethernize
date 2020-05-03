@@ -1,5 +1,6 @@
 .table-striped-container {
 	overflow-x: scroll;
+	padding: 0px !important;
 }
 
 .table-striped-container table thead {
@@ -14,7 +15,7 @@
 .table-striped-container table th,
 .table-striped-container table td {
 	font-size: 0.625rem;
-	padding: 0.75rem;
+	padding: 1.2em;
 	text-align: center;
 }
 
