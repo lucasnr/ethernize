@@ -58,7 +58,7 @@ main {
 .value {
 	background-color: #f8f8f8;
 	font-size: 0.875rem;
-	min-height: 2rem;
+	min-height: 2.25rem;
 	min-width: 6rem;
 	width: 100%;
 }
