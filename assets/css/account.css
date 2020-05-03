@@ -60,3 +60,10 @@
 		min-width: auto;
 	}
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	#login .btn {
+		padding-bottom: 0.63125rem;
+		padding-top: 0.63125rem;
+	}
+}

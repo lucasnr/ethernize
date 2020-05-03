@@ -8,6 +8,7 @@
 
 #buy form {
 	margin-bottom: 1rem;
+	width: 100%;
 }
 
 #buy .btn {
@@ -82,6 +83,21 @@
 }
 
 @supports (-ms-ime-align: auto) {
+	a.btn {
+		display: table;
+	}
+
+	a.btn > * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	a.btn i {
+		display: inline-flex;
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	a.btn {
 		display: table;
 	}

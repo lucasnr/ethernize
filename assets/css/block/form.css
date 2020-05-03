@@ -17,6 +17,10 @@ select.input {
 	-webkit-appearance: none;
 }
 
+select.input::-ms-expand {
+	display: none;
+}
+
 .input::placeholder {
 	color: #aaa;
 }
