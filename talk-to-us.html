@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ethernize - Fale conosco</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css"
+		/>
+
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/block/header.css" />
+		<link rel="stylesheet" href="./assets/css/block/form.css" />
+		<link rel="stylesheet" href="./assets/css/commons.css" />
+
+		<link rel="stylesheet" href="./assets/css/talk-to-us.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div>
+					<button class="header__button">
+						<i class="mdi mdi-menu"></i>
+					</button>
+					<a href="./dashboard.html" class="header__brand">
+						<img src="./assets/img/logo.png" alt="Logomarca da Ethernize" />
+						ethernize
+					</a>
+				</div>
+
+				<div class="header__user">
+					<div>
+						<h6 class="header__user__name color-1">Alessandra Lima</h6>
+
+						<div class="d-flex align-center">
+							<span class="header__user__summary-label">Resumo da conta</span>
+							<span class="header__user__summary-value color-success d-flex">
+								<i class="mdi mdi-chevron-up-box"></i>
+								0.16%
+							</span>
+						</div>
+					</div>
+					<img
+						class="header__user__avatar"
+						src="./assets/img/user.jpg"
+						alt="Imagem do usuário"
+					/>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<h1 class="title">Fale conosco</h1>
+
+			<div class="card d-md-flex">
+				<section>
+					<h2 class="card__title" id="title">Entre em contato por e-mail</h2>
+					<h3 class="card__subtitle" id="text">
+						Lorem ipsum dolor sit amet gravita sans conectstur lorem lorem
+					</h3>
+
+					<a href="mailto:suporte@ethernize.com">suporte@ethernize.com</a>
+				</section>
+
+				<section>
+					<h2 class="card__title">Abra um ticket</h2>
+
+					<form id="ticket-form">
+						<div>
+							<h3 class="card__subtitle">Nome completo</h3>
+							<input type="text" class="value" />
+						</div>
+
+						<div>
+							<h3 class="card__subtitle">Qual tipo de problema</h3>
+							<select class="input"></select>
+						</div>
+
+						<div id="textarea">
+							<h3 class="card__subtitle">Faça alguma comentário se desejar</h3>
+							<textarea cols="30" rows="10" class="value"></textarea>
+						</div>
+					</form>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
