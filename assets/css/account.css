@@ -1,0 +1,62 @@
+.card {
+	width: 100%;
+}
+
+.group {
+	align-items: flex-end;
+}
+
+#login {
+	justify-content: flex-start;
+}
+
+#login > div {
+	max-width: 14rem;
+}
+
+#login .btn {
+	flex-basis: 100%;
+	font-size: 0.75rem;
+	font-weight: 500;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+	#personal > div {
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) {
+	#login .btn {
+		flex-basis: auto;
+		margin-bottom: 0.5rem;
+		margin-left: 1.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	#personal > div:nth-child(2),
+	#personal > div:nth-child(7) {
+		min-width: 80%;
+	}
+
+	#personal > div:nth-child(4),
+	#personal > div:nth-child(5),
+	#personal > div:nth-child(6) {
+		min-width: 33.33%;
+	}
+
+	#personal > div:nth-child(10) {
+		min-width: 73%;
+	}
+
+	#personal > div:nth-child(11) {
+		max-width: 3.5rem;
+	}
+
+	#personal > div:nth-child(11) .value {
+		min-width: auto;
+	}
+}

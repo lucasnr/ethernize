@@ -2,34 +2,6 @@
 	margin-bottom: 1.5rem;
 }
 
-.group {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
-
-.group + .group {
-	margin-top: 2rem;
-}
-
-.group > div,
-.group .subtitle {
-	padding: 0px 0.5rem;
-}
-
-.group > div {
-	margin-bottom: 0.5rem;
-	flex-grow: 1;
-}
-
-.group .card__subtitle {
-	margin-bottom: 0.25rem;
-}
-
-.subtitle {
-	flex-basis: 100%;
-}
-
 @media (min-width: 992px) {
 	.card:first-child {
 		width: calc(70% - 0.75rem);
