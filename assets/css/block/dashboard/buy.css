@@ -80,3 +80,18 @@
 		width: calc(33.33% + 1rem);
 	}
 }
+
+@supports (-ms-ime-align: auto) {
+	a.btn {
+		display: table;
+	}
+
+	a.btn > * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	a.btn i {
+		display: inline-flex;
+	}
+}
