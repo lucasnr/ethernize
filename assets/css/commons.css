@@ -10,10 +10,6 @@ main {
 	width: 100%;
 }
 
-.table-container {
-	overflow-x: scroll;
-}
-
 .mdi {
 	align-items: center;
 	display: flex;
@@ -66,7 +62,7 @@ main {
 }
 
 .btn {
-	font-size: 0.625rem;
+	font-size: 0.75rem;
 }
 
 .btn i {

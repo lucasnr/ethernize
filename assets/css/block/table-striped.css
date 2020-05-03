@@ -1,0 +1,27 @@
+.table-striped-container {
+	overflow-x: scroll;
+}
+
+.table-striped-container table thead {
+	background-color: #f9f9f9;
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.table-striped-container table th {
+	font-weight: 600;
+}
+
+.table-striped-container table th,
+.table-striped-container table td {
+	font-size: 0.625rem;
+	padding: 0.75rem;
+	text-align: center;
+}
+
+.table-striped-container table tbody tr:nth-child(odd) {
+	background-color: #ededed;
+}
+
+.table-striped-container table tbody tr:nth-child(even) {
+	background-color: #e0e0e0;
+}

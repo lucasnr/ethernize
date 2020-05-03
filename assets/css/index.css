@@ -40,6 +40,10 @@ main {
 	margin-top: 2rem;
 }
 
+.form .input {
+	padding: 0.875rem 1rem;
+}
+
 .form span {
 	font-size: 0.75rem;
 	color: #888;
@@ -52,6 +56,7 @@ main {
 .form .btn {
 	border-width: 0.125rem;
 	min-width: 12.5rem;
+	padding: 0.625rem 1.25rem;
 }
 
 .form .btn:not(.btn--variant):not(:hover):not(:focus) {
