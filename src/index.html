@@ -5,11 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ethernize - Login</title>
 
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- build:css assets/css/index.min.css -->
 		<link rel="stylesheet" href="./assets/css/normalize.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<link rel="stylesheet" href="./assets/css/block/form.css" />
 
 		<link rel="stylesheet" href="./assets/css/index.css" />
+		<!-- endbuild -->
 	</head>
 	<body>
 		<main>
@@ -36,12 +43,5 @@
 		</main>
 	</body>
 
-	<!-- fake navigation -->
-	<script>
-		const form = document.querySelector('#login-form');
-		form.onsubmit = function (event) {
-			event.preventDefault();
-			window.location.replace('./dashboard.html');
-		};
-	</script>
+	<script inline src="./assets/js/index.js"></script>
 </html>

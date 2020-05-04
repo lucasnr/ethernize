@@ -9,7 +9,7 @@
 
 select.input {
 	appearance: none;
-	background: transparent url(../../img/select.png) no-repeat right 0.75rem center;
+	background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAKCAMAAABhV5WtAAAAS1BMVEUAAAD7+/v////////39/f////4+Pj6+vr39/f8/Pzi4uLz8/Pw8PD8/PzMzMzLy8vJycne3t7b29vW1tbS0tLr6+vl5eXd3d3Y2NhbRymFAAAADnRSTlMAQgcDOwFqZFE+xmBPMcf0iI8AAABiSURBVAjXVcwJDoAgDETRorhrOxa3+5/UcQvxQ0h4aSq9z/98k1FhdwD4GJZBqnaBqvHQVZGaQqSKRP54L6pJxC5BmWViMT2TOALpLSRwGbwtJRcdBu8uyk2OPZB+hbX56AR4XQbbEHt64QAAAABJRU5ErkJggg==') no-repeat right 0.75rem center;
 
 	background-size: 0.5rem;
 	color: rgba(0, 0, 0, 0.5);
