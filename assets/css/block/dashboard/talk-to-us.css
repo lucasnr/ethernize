@@ -1,4 +1,8 @@
 #talk-to-us {
+	padding: 0px;
+}
+
+#talk-to-us > a {
 	padding: 0.75rem 1.25rem;
 }
 

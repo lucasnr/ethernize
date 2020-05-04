@@ -1,4 +1,8 @@
 #safebux {
+	padding: 0px;
+}
+
+#safebux > a {
 	padding: 1.25rem;
 }
 
