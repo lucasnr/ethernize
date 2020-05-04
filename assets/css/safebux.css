@@ -47,7 +47,11 @@
 	z-index: 15;
 }
 
-.tabs ~ section {
+.tabs ~ section:not(.selected) {
+	display: none !important;
+}
+
+.tabs ~ section.selected {
 	border: 0.0625rem solid rgba(255, 255, 255, 0.875);
 	padding: 2.5rem 2rem;
 	position: relative;
@@ -64,21 +68,24 @@
 	text-align: center;
 }
 
-.card .card__title {
+.card .card__title,
+.card .card__subtitle:last-of-type,
+.card .price {
 	color: #487050;
+}
+
+.card .card__title {
 	font-size: 2.25rem;
 	font-weight: 400;
 	margin-bottom: 1.5rem;
 }
 
 .card .card__subtitle:last-of-type {
-	color: #487050;
 	font-weight: 600;
 }
 
 .card .price {
 	align-items: center;
-	color: #487050;
 	display: flex;
 	font-size: 1.125rem;
 	font-weight: 400;
@@ -114,7 +121,7 @@
 	color: #487050;
 }
 
-#robots {
+.robots {
 	border: 0.0625rem solid #fff;
 	border-left: none;
 	position: absolute;
@@ -123,12 +130,12 @@
 	transform: translate(-50%, -50%);
 }
 
-#robots ul {
+.robots ul {
 	display: flex;
 	flex-direction: row-reverse;
 }
 
-#robots ul li {
+.robots ul li {
 	background-color: #394345;
 	border-left: 0.0625rem solid #fff;
 	color: rgba(255, 255, 255, 0.5);
@@ -138,7 +145,7 @@
 	white-space: nowrap;
 }
 
-#robots ul li:last-child {
+.robots ul li:last-child {
 	background-color: #487050;
 	color: rgba(255, 255, 255, 0.75);
 }
@@ -154,11 +161,11 @@
 		width: 33.33%;
 	}
 
-	.tabs ~ section {
+	.tabs ~ section.selected {
 		padding: 4rem 3rem;
 	}
 
-	#robots ul li {
+	.robots ul li {
 		font-size: 0.875rem;
 	}
 }
@@ -182,8 +189,8 @@
 		width: auto;
 	}
 
-	section:first-of-type {
-		display: flex;
+	section.cards {
+		display: flex !important;
 		flex-flow: row wrap;
 		justify-content: space-between;
 	}
@@ -192,19 +199,19 @@
 		width: calc(50% - 1rem);
 	}
 
-	#robots {
+	.robots {
 		left: calc(0% - 11.5rem);
 		top: 50%;
 		transform: rotate(-90deg);
 	}
 
-	#robots ul {
+	.robots ul {
 		flex-direction: row;
 	}
 }
 
 @media (min-width: 1200px) {
-	section:first-of-type {
+	section.cards {
 		flex-direction: row;
 	}
 
