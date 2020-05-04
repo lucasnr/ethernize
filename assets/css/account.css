@@ -10,29 +10,17 @@
 	justify-content: flex-start;
 }
 
-#login > div {
-	max-width: 14rem;
-}
-
 #login .btn {
 	flex-basis: 100%;
 	font-weight: 500;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin: 0.5rem;
+	margin-bottom: 0px;
 	min-height: calc(2.25rem - 0.0625rem);
 }
 
 @media (max-width: 576px) {
 	#personal > div {
 		width: 100%;
-	}
-}
-
-@media (min-width: 576px) {
-	#login .btn {
-		flex-basis: auto;
-		margin-bottom: 0.5rem;
-		margin-left: 1.5rem;
 	}
 }
 
@@ -58,6 +46,17 @@
 
 	#personal > div:nth-child(11) .value {
 		min-width: auto;
+	}
+
+	#login > div {
+		max-width: 14rem;
+	}
+
+	#login .btn {
+		flex-basis: auto;
+		margin-bottom: 0.5rem;
+		margin-left: 1.5rem;
+		margin-top: 0px;
 	}
 }
 
