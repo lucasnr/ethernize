@@ -25,26 +25,46 @@
 }
 
 .sidebar nav {
-	padding: 2rem 0px;
+	padding: 1rem 0px;
 	padding-left: 1rem;
 	width: 100%;
 }
 
-.sidebar nav ul li + li a {
+.sidebar nav ul li + li > * {
 	border-top: 0.0625rem solid rgba(0, 0, 0, 0.125);
 }
 
-.sidebar nav ul li a {
+.sidebar nav ul li > * {
 	align-items: center;
+	cursor: pointer;
 	display: flex;
-	font-size: 0.875rem;
+	font-size: 0.75rem;
 	font-weight: 500;
-	padding: 0.875rem 1.5rem;
+	padding: 0.875em 1.375em;
 	text-transform: uppercase;
 	width: 100%;
 }
 
-.sidebar nav ul li a i {
+.sidebar nav ul li > * i {
 	font-size: 1.75em;
 	margin-right: 0.375rem;
+}
+
+.sidebar .sidebar__sub-items {
+	flex-flow: row wrap;
+	padding-right: 0px;
+}
+
+.sidebar .sidebar__sub-items ul {
+	display: none;
+	padding-top: .5rem;
+	width: 100%;
+}
+
+.sidebar .sidebar__sub-items:hover ul {
+	display: block;
+}
+
+.sidebar .sidebar__sub-items ul li > * {
+	font-size: .625rem;
 }
