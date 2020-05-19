@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="./assets/css/normalize.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<link rel="stylesheet" href="./assets/css/block/header.css" />
+		<link rel="stylesheet" href="./assets/css/block/sidebar.css" />
 		<link rel="stylesheet" href="./assets/css/block/form.css" />
 		<link rel="stylesheet" href="./assets/css/block/table-striped.css" />
 		<link rel="stylesheet" href="./assets/css/commons.css" />
@@ -50,16 +51,78 @@
 							</span>
 						</div>
 					</div>
-					<a href="./account.html" class="d-flex">
-						<img
-							class="header__user__avatar"
-							src="./assets/img/user.jpg"
-							alt="Imagem do usuário"
-						/>
-					</a>
+					<img
+						class="header__user__avatar"
+						src="./assets/img/user.jpg"
+						alt="Imagem do usuário"
+					/>
+
+					<ul class="header__user-actions">
+						<li>
+							<a href="./account.html">
+								<i class="mdi mdi-account-outline"></i>
+								Minha conta
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="mdi mdi-lock-outline"></i>
+								Senha
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="mdi mdi-exit-to-app"></i>
+								Sair
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</header>
+
+		<aside class="sidebar color-1">
+			<nav>
+				<ul>
+					<li>
+						<a href="./overview.html">
+							<i class="mdi mdi-account-outline"></i>
+							Resumo
+						</a>
+					</li>
+					<li>
+						<a href="./wallet.html">
+							<i class="mdi mdi-wallet-outline"></i>
+							Carteira
+						</a>
+					</li>
+					<li>
+						<a href="./overview.html">
+							<i class="mdi mdi-clipboard-text-outline"></i>
+							Extrato da conta
+						</a>
+					</li>
+					<li>
+						<a href="./contracts.html">
+							<i class="mdi mdi-file-document-edit-outline"></i>
+							Contratos
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-account-multiple-outline"></i>
+							Cadastrar
+						</a>
+					</li>
+					<li>
+						<a href="./talk-to-us.html">
+							<i class="mdi mdi-headset"></i>
+							Suporte
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
 
 		<main class="container">
 			<h1 class="title">Carteira</h1>
@@ -226,5 +289,10 @@
 				</section>
 			</div>
 		</main>
+
+		<!-- build:inlinejs -->
+		<script src="./assets/js/header.js" async></script>
+		<script src="./assets/js/sidebar.js" async></script>
+		<!-- endbuild -->
 	</body>
 </html>
