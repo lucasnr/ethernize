@@ -32,6 +32,7 @@
 
 .header .header__user {
 	justify-content: flex-end;
+	position: relative;
 	text-align: right;
 }
 
@@ -67,6 +68,61 @@
 
 .header .header__user .header__user__summary-value i {
 	margin-right: 0.125rem;
+}
+
+.header .header__user-actions {
+	background-color: #fff;
+	border-radius: 0.25rem;
+	border-top-right-radius: 0px;
+	box-shadow: 0px 0px 0.125rem rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	padding: 1rem 1.5rem;
+	position: absolute;
+	right: 2rem;
+	top: 100%;
+	transform: translateY(-0.75rem);
+	transition: transform 0.2s ease, opacity 0.3s ease;
+	z-index: -25;
+}
+
+.header .header__user:hover .header__user-actions {
+	opacity: 1;
+	transform: none;
+	z-index: 25;
+}
+
+.header .header__user-actions::before {
+	border-color: transparent transparent #fff transparent;
+	border-style: solid;
+	border-width: 0 0 2rem 2rem;
+	content: ' ';
+	position: absolute;
+	right: 0;
+	top: -1.25rem;
+}
+
+.header .header__user-actions li:not(:last-child) {
+	padding-bottom: 0.5rem;
+}
+
+.header .header__user-actions li + li {
+	border-top: 0.0625rem solid rgba(0, 0, 0, 0.125);
+	padding-top: 0.5rem;
+}
+
+.header .header__user-actions li a {
+	align-items: center;
+	color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	font-size: 0.9375rem;
+	font-weight: 500;
+	width: 100%;
+}
+
+.header .header__user-actions li a i {
+	color: #0a7bbd;
+	font-size: 1.375em;
+	margin-right: 0.25rem;
 }
 
 @media (max-width: 576px) {

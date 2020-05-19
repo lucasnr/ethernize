@@ -2,6 +2,7 @@ const { src, dest, series } = require('gulp'),
 	clean = require('gulp-clean'),
 	cssmin = require('gulp-cssmin'),
 	usemin = require('gulp-usemin'),
+	uglify = require('gulp-uglify'),
 	inlinesource = require('gulp-inline-source'),
 	htmlmin = require('gulp-htmlmin');
 
@@ -18,6 +19,7 @@ function buildHtml() {
 		.pipe(
 			usemin({
 				css: [cssmin],
+				inlinejs: [uglify],
 			})
 		)
 		.pipe(dest('dist/'));
