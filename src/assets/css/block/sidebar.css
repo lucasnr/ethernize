@@ -61,7 +61,7 @@
 	width: 100%;
 }
 
-.sidebar .sidebar__sub-items:hover ul {
+.sidebar .sidebar__sub-items ul.show {
 	display: block;
 }
 
