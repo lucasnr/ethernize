@@ -24,15 +24,17 @@
 	}
 
 	document.addEventListener('click', function(event) {
-		if (!subitems.contains(event.target)) {
-			subitemsList.classList.remove('show');
-			subitemsList.setAttribute('aria-expanded', 'false');
-		}
+		if (!subitems.contains(event.target))
+			if(subitemsList.classList.contains('show')) {
+				subitemsList.classList.remove('show');
+				subitemsList.setAttribute('aria-expanded', 'false');
+			}
 
-		if (!sidebar.contains(event.target) && !button.contains(event.target)) {
-			sidebar.classList.remove('show');
-			body.style.overflowY = 'scroll';
-			body.style.paddingRight = '0px';
-		}
+		if (!sidebar.contains(event.target) && !button.contains(event.target))
+			if(sidebar.classList.contains('show')) {
+				sidebar.classList.remove('show');
+				body.style.overflowY = 'scroll';
+				body.style.paddingRight = '0px';
+			}
 	});
 })();
