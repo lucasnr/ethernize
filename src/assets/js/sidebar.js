@@ -24,11 +24,15 @@
 	}
 
 	document.addEventListener('click', function(event) {
-		var isClickInside = subitems.contains(event.target);
-
-		if (!isClickInside) {
+		if (!subitems.contains(event.target)) {
 			subitemsList.classList.remove('show');
 			subitemsList.setAttribute('aria-expanded', 'false');
+		}
+
+		if (!sidebar.contains(event.target) && !button.contains(event.target)) {
+			sidebar.classList.remove('show');
+			body.style.overflowY = 'scroll';
+			body.style.paddingRight = '0px';
 		}
 	});
 })();
